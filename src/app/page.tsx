@@ -1,16 +1,15 @@
-import  Button from '@mui/material/Button'
 import React from 'react'
-
+import Container from '@mui/material/Container'
+import OneOffCustomization from './components/OneOffCustomization'
+import Typography from '@mui/material/Typography'
 
 const Home = () => {
   return (
     <>
-    <Button>
-    This is Home
-
-    </Button>
-   
-      
+      <Container sx={{display: 'flex', flexDirection: 'column'}}>
+      <Typography sx={{fontWeight: 1000}} variant='h1'>This is Home </Typography>  
+        <OneOffCustomization />
+      </Container>
     </>
   )
 }
